@@ -1873,7 +1873,7 @@ h3 {
 
 /* line 2, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
 .testimonial_area {
-  background-image: url(../img/banner/testmonial.png);
+  background-image: url(../img/service/testmonial.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -3490,10 +3490,10 @@ h3 {
   margin-top: 30px;
 }
 .bradcam_bg_1 {
-  background-image: url(../img/banner/bradcam.png);
+  background-image: url(../img/service/smal_otk.png);
 }
 .bradcam_bg_2 {
-  background-image: url(../img/banner/banner_2_22.jpg);
+  background-image: url(../img/service/woman.jpg);
 }
 
 .bradcam_area {
