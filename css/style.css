@@ -441,7 +441,7 @@ h3 {
   border-radius: 30px;
   text-align: center;
   color: #fff !important;
-  text-transform: capitalize;
+  text-transform: none;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -488,7 +488,7 @@ h3 {
   border-radius: 5px;
   text-align: center;
   color: #fff !important;
-  text-transform: capitalize;
+  text-transform: none;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
@@ -533,7 +533,7 @@ h3 {
   -moz-border-radius: 30px;
   border-radius: 30px;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: none;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
@@ -623,7 +623,7 @@ h3 {
   font-size: 14px;
   color: #009DFF;
   border: 1px solid #009DFF;
-  text-transform: capitalize;
+  text-transform: none;
   padding: 10px 25px;
 }
 
@@ -877,6 +877,10 @@ h3 {
   color: #FFFFFF;
   vertical-align: center;
   margin-bottom: 0px;
+}
+
+.logo h2 :hover {
+  color: rgb(198, 214, 200);
 }
 
 @media (max-width: 767px) {
@@ -1353,7 +1357,7 @@ h3 {
 .slider_area .single_slider .slider_text h3 {
   font-family: "Poppins", sans-serif;
   font-size: 60px;
-  text-transform: capitalize;
+  text-transform: none;
   letter-spacing: 2px;
   font-weight: 300;
   line-height: 76px;
@@ -2934,7 +2938,7 @@ h3 {
 /* line 204, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_offers.scss */
 .features_room .rooms_here .single_rooms .room_thumb .room_heading a {
   color: #fff;
-  text-transform: capitalize;
+  text-transform: none;
   font-weight: 600;
   position: relative;
   z-index: 8;
@@ -3259,7 +3263,7 @@ h3 {
   font-size: 18px;
   font-weight: 500;
   color: #001D38;
-  text-transform: capitalize;
+  text-transform: none;
   margin-bottom: 40px;
 }
 
@@ -3275,7 +3279,7 @@ h3 {
   font-size: 22px;
   font-weight: 400;
   color: #fff;
-  text-transform: capitalize;
+  text-transform: none;
   margin-bottom: 40px;
 }
 
@@ -3528,7 +3532,7 @@ h3 {
   color: #fff;
   font-weight: 300;
   margin-bottom: 0;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 @media (max-width: 767px) {
@@ -3541,7 +3545,7 @@ h3 {
   font-size: 18px;
   color: #fff;
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .bradcam_area p a {
@@ -3561,7 +3565,7 @@ h3 {
 
 .popup_box .boxed-btn3 {
   width: 100%;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .popup_box .popup_header {
@@ -4247,10 +4251,17 @@ h3 {
 /*=================== contact banner end ====================*/
 /*=================== contact form start ====================*/
 /* line 45, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_contact.scss */
+
 .contact-title {
   font-size: 27px;
   font-weight: 600;
+  margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#FastMessageAnchor{
+  margin-bottom: 50px;
+  visibility: hidden;
 }
 
 /* line 53, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_contact.scss */
@@ -7256,7 +7267,7 @@ h6 {
   font-size: 20px;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  text-transform: capitalize;
+  text-transform: none;
   margin-bottom: 22px;
 }
 
