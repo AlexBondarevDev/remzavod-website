@@ -1321,21 +1321,21 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url('../img/banner/banner.png');
+  background-image: url('../img/basic_img/brutalmen.png');
   width: auto; height: auto;
 }
 
 /* line 4, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slider.scss */
 .slider_bg_2 {
-  background-image: url('../img/banner/banner_2.jpg');
+  background-image: url('../img/basic_img/smileworker.jpg');
 }
 
 .slider_bg_3 {
-  background-image: url('../img/banner/banner_3.jpg');
+  background-image: url('../img/basic_img/ladder.jpg');
 }
 
 .slider_bg_4 {
-  background-image: url('../img/banner/banner_4.jpg');
+  background-image: url('../img/basic_img/crafter.jpg');
 }
 
 /* line 8, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slider.scss */
@@ -1526,7 +1526,7 @@ h3 {
 
 /* line 27, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_counter.scss */
 .counter_bg_1 {
-  background-image: url(../img/about/counter2.jpg);
+  background-image: url(../img/basic_img/counter.jpg);
 }
 
 /* line 31, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_counter.scss */
@@ -1877,7 +1877,7 @@ h3 {
 
 /* line 2, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
 .testimonial_area {
-  background-image: url(../img/service/testmonial.png);
+  background-image: url(../img/basic_img/testmonial.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1953,7 +1953,7 @@ h3 {
 
 /* line 61, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
 .Information_area {
-  background-image: url(../img/banner/info_banner.png);
+  background-image: url(../img/basic_img/info_img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -3494,10 +3494,10 @@ h3 {
   margin-top: 30px;
 }
 .bradcam_bg_1 {
-  background-image: url(../img/service/smal_otk.png);
+  background-image: url(../img/basic_img/smal_brutal.png);
 }
 .bradcam_bg_2 {
-  background-image: url(../img/service/woman.jpg);
+  background-image: url(../img/basic_img/woman.jpg);
 }
 
 .bradcam_area {
