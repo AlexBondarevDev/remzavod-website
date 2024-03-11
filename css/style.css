@@ -1365,6 +1365,10 @@ h3 {
   color: #fff;
 }
 
+#principles {
+  text-align: center;
+}
+
 /* line 26, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 span {
   font-weight: 700;
@@ -1958,6 +1962,7 @@ h3 {
   background-size: cover;
   background-position: center center;
   padding: 162px 0;
+  height: 530px;
 }
 
 @media (max-width: 767px) {
@@ -2351,14 +2356,14 @@ h3 {
 /* line 41, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_case_details.scss */
 .case_details_area .details_main_wrap .single_details span {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 25px;
   color: #001D38;
 }
 
 /* line 46, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_case_details.scss */
 .case_details_area .details_main_wrap .single_details p {
   color: #727272;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   margin-bottom: 0;
 }
