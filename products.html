@@ -21,7 +21,10 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/productions.css">
+    <link rel="stylesheet" href="css/loadspin.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -84,7 +87,6 @@
         </div>
     </header>
     <!-- header-end -->
-
     <!-- bradcam_area  -->
     <div class="bradcam_area bradcam_bg_1">
         <div class="container">
@@ -99,126 +101,68 @@
     </div>
     <!--/ bradcam_area  -->
 
-    <!-- case_study_area  -->
-    <div class="case_study_area case_page">
-        <div class="container">
-            <!--<div class="row">
-                    <div class="col-xl-12">
-                        <div class="portfolio-menu text-center">
-                            <button class="active" data-filter="*">Все</button>
-                            <button data-filter=".cat1">Комплексное улучшение</button>
-                            <button data-filter=".cat2">Снабжение и уход</button>
-                            <button data-filter=".cat3">Взгляд в будущее</button>
-                            <button data-filter=".cat4">Свежее решение</button>
-                        </div>
-                    </div>
-                </div> -->
-            <div class="row grid">
-                <div class="col-xl-4 grid-item cat2 cat4">
-                    <div class="single_case">
-                        <div class="case_thumb">
-                            <img src="img/case/ysl/1.jpg" alt="">
-                        </div>
-                        <div class="case_heading">
-                            <div>
-                                <span></span>
-                                <h3 class="cente">Поставки<br>оборудования</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 grid-item cat3">
-                    <div class="single_case">
-                        <div class="case_thumb">
-                            <img src="img/case/ysl/2.jpg" alt="">
-                        </div>
-                        <div class="case_heading">
-                            <span></span>
-                            <h3 class="cente">Ремонтные<br>работы</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 grid-item cat1 cat3">
-                    <div class="single_case">
-                        <div class="case_thumb">
-                            <img src="img/case/ysl/3.jpg" alt="">
-                        </div>
-                        <div class="case_heading">
-                            <span></span>
-                            <h3 class="cente">Работы по<br>модернизации</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 grid-item cat1 cat3">
-                    <div class="single_case" >
-                        <div class="case_thumb">
-                            <img src="img/case/ysl/4.jpg" alt="">
-                        </div>
-                        <div class="case_heading">
-                            <span></span>
-                            <h3 class="cente">Поиск<br>деффектов</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 grid-item cat1">
-                    <div class="single_case">
-                        <div class="case_thumb">
-                            <img src="img/case/ysl/6.jpg" alt="">
-                        </div>
-                        <div class="case_heading">
-                            <span></span>
-                            <h3 class="cente">Восстановление характеристик</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 grid-item cat2 cat3">
-                    <div class="single_case">
-                        <div class="case_thumb">
-                            <img src="img/case/ysl/5.jpg" alt="">
-                        </div>
-                        <div class="case_heading">
-                            <span></span>
-                            <h3 class="cente">Поставки запасных частей</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 grid-item cat4">
-                    <div class="single_case">
-                        <div class="case_thumb">
-                            <img src="img/case/ysl/8.jpg" alt="">
-                        </div>
-                        <div class="case_heading">
-                            <span></span>
-                            <h3 class="cente">Комплексные<br>работы</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 grid-item cat2 cat3" >
-                    <div class="single_case">
-                        <div class="case_thumb">
-                            <img src="img/case/ysl/7.jpg" alt="">
-                        </div>
-                        <div class="case_heading">
-                            <span></span>
-                            <h3 class="cente">Гарантийное<br>обслуживание</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 grid-item cat3">
-                    <div class="single_case">
-                        <div class="case_thumb">
-                            <img src="img/case/ysl/9.png" alt="">
-                        </div>
-                        <div class="case_heading">
-                            <span></span>
-                            <h3 class="cente">Договорные<br>работы</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    
+
+
+
+    <div class="contact-title" id="productionTableContainer">
+        <table id="productionTable">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Классификация</th>
+                    <th>Модель</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <h4>*загрузка перечня оборудования</h4>
+        <div class="loading-spinner" id="loadProdSpin">
+            <span class="loadSpin l1"></span>
+            <span class="loadSpin l2"></span>
+            <span class="loadSpin l3"></span>
+            <span class="loadSpin l4"></span>
+            <span class="loadSpin l5"></span>
+            <span class="loadSpin l6"></span>
         </div>
     </div>
-    <!-- /case_study_area  -->
+    
+
+    <div class="whole-wrap" id="productionFotoContainer">
+		<div class="container box_1170">
+			<div class="section-top-border">
+				<h2 id="selprodlabel">Ст</h2>
+				<div class="row gallery-item">
+					<!--<div class="col-md-4">
+						<a href="img/works/stan/2.jpg">
+							<div class="single-gallery-image" style="background: url(img/works/stan/2.jpg);"></div>
+						</a>
+					</div>
+                    
+					<div class="col-md-6">
+						<a href="img/works/stan/10.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(img/works/stan/10.jpg);"></div>
+						</a>
+					</div>
+                -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Information_area  -->
     <div class="Information_area overlay" >
@@ -251,12 +195,17 @@
         </div>
     </footer>
 
+    <script src="js/products/products.js"></script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
+
     <script src="js/ajax-form.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
