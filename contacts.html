@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/gijgo.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/loadspin.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -100,10 +101,40 @@
     <!-- ================ contact section start ================= -->
     <section class="contact-section">
         <div class="container">
-            <div class="d-none d-sm-block mb-5 pb-4">
-                <p id="oooo">Наше главное управление:</p>
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A51f61e84f3a589029ebdd93eb09eb2a8bbc0e7232b0392d1da8d20c9b38459ec&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+            <div class="d-none d-sm-block preserve-properties mb-5 pb-4">
+                <p class="mapLabel">Наше главное управление - Россия, г.Новозыбков, ул.Мичурина, 44:</p>
+                <div class="map-container">
+                    <div class="loading-overlay load1">
+                        <div class="loading-spinner images">
+                            <span class="loadSpin l1"></span>
+                            <span class="loadSpin l2"></span>
+                            <span class="loadSpin l3"></span>
+                            <span class="loadSpin l4"></span>
+                            <span class="loadSpin l5"></span>
+                            <span class="loadSpin l6"></span>
+                        </div>
+                    </div>
+                    <script id="map-script-1" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A51f61e84f3a589029ebdd93eb09eb2a8bbc0e7232b0392d1da8d20c9b38459ec&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
             </div>
+            <div class="d-none d-sm-block preserve-properties mb-5 pb-4">
+                <p class="mapLabel l2">Наша производственная база - Беларусь, г.Гомель, ул.Барыкина, 309:</p>
+                <div class="map-container">
+                    <div class="loading-overlay load2">
+                        <div class="loading-spinner images">
+                            <span class="loadSpin l1"></span>
+                            <span class="loadSpin l2"></span>
+                            <span class="loadSpin l3"></span>
+                            <span class="loadSpin l4"></span>
+                            <span class="loadSpin l5"></span>
+                            <span class="loadSpin l6"></span>
+                        </div>
+                    </div>
+                    <script id="map-script-2" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab06cdff35e36f95f0c2ca792810bbeaf35db7d44d9c01f05ea86f1369a43dbf2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+            
+
             <div class="contact-title" id="FastMessageAnchor"> <p>/</p> </div>
             <div class="row">
                 <div class="col-12">
@@ -189,6 +220,7 @@
         </div>
     </footer>
     
+    <script src="js/map-load.js"></script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -210,23 +242,6 @@
     <script src="js/contact.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
-
-    
-    <script>
-        $('#datepicker').datepicker({
-            iconsLibrary: 'fontawesome',
-            icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
-         }
-        });
-        $('#datepicker2').datepicker({
-            iconsLibrary: 'fontawesome',
-            icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
-         }
-
-        });
-    </script>
 
 </body>
 </html>

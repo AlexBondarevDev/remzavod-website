@@ -79,3 +79,14 @@
 .loading-spinner.images .loadSpin {
   background: white;
 }
+
+
+
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+

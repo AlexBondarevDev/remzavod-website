@@ -1566,12 +1566,6 @@ h3 {
 .ooo{
   text-align: center;
 }
-#oooo{
-  font-size: 30px;
-  color: #000000;
-  margin-bottom: 20px;
-  text-align: center; 
-}
 #rek{
   font-style: italic;
   margin-bottom: 25px;
@@ -7334,4 +7328,16 @@ h6 {
 }
 .abv{
   padding: 20px;
+}
+.preserve-properties {
+  display: initial !important;
+}
+.mapLabel{
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center; 
+}
+.mapLabel.l2{
+  margin-top: 60px;
 }
