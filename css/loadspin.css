@@ -90,3 +90,9 @@
   overflow: hidden;
 }
 
+
+
+
+#sendMailSpin {
+  visibility: hidden;
+}

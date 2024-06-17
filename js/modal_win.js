@@ -38,23 +38,39 @@ var modalTextDictionary = {
 document.addEventListener("DOMContentLoaded", function() {
     var modalWinElements = document.querySelectorAll('.card_modalwin');
 
-    modalWinElements.forEach(function(element) {
-        element.addEventListener('click', function() {
-            var serviceName = element.getAttribute('serviceName');
-            fillModalContent(serviceName);
+    if(modalWinElements.length > 0) {
+        modalWinElements.forEach(function(element) {
+            element.addEventListener('click', function() {
+                var serviceName = element.getAttribute('serviceName');
+                fillModalContent(serviceName);
+                document.getElementById("my-modalwin").classList.add("open");
+            });
+        });
+    
+        function fillModalContent(serviceCode) {
+            var imageContainer = document.getElementById("Modal_ServicesImg");
+            var modalLabel = document.getElementById("modal_label");
+            var modalText = document.getElementById("modal_text");
+    
+            imageContainer.src = "";
+            var imgload = document.querySelector(".loading-overlay");
+            imgload.style.visibility = 'visible';
+
+            var tempImage = new Image();
+            tempImage.src = "img/services_img/"+modalImgDictionary[serviceCode];
+            tempImage.onload = function() { imgload.style.visibility = 'hidden'; };
+
+            imageContainer.src = "img/services_img/"+modalImgDictionary[serviceCode];
+            modalLabel.innerHTML = modalLabelDictionary[serviceCode];
+            modalText.innerHTML = modalTextDictionary[serviceCode];
+        }
+    }
+    else {
+        document.getElementById("contact-button").addEventListener('click', function() {
             document.getElementById("my-modalwin").classList.add("open");
         });
-    });
-
-    function fillModalContent(serviceCode) {
-        var imageContainer = document.getElementById("Modal_ServicesImg");
-        var modalLabel = document.getElementById("modal_label");
-        var modalText = document.getElementById("modal_text");
-
-        imageContainer.src = "img/services_img/"+modalImgDictionary[serviceCode];
-        modalLabel.innerHTML = modalLabelDictionary[serviceCode];
-        modalText.innerHTML = modalTextDictionary[serviceCode];
     }
+    
 });
 
 // Закрыть модальное окно
@@ -76,4 +92,34 @@ document.querySelector("#my-modalwin .modal__box").addEventListener('click', eve
 document.getElementById("my-modalwin").addEventListener('click', event => {
     if (event._isClickWithInModal) return;
     event.currentTarget.classList.remove('open');
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var img = document.getElementById("contact-img");
+    if(img != null) {
+        function updateImage() {
+            if (window.innerWidth <= 400) {
+                img.src = "img/basic_img/agreement_min.jpg";
+            } else {
+                img.src = "img/basic_img/agreement.jpg";
+            }
+        }
+        updateImage();
+        window.addEventListener("resize", updateImage);
+    }
+    else {
+        function updateAccordion() {
+            if (window.innerWidth <= 520) {
+                document.getElementById("buttonAccOne").innerHTML = "Какими принципами вы <br>руководствуетесь в работе?";
+                document.getElementById("buttonAccTwo").innerHTML = "Уделяете ли вы внимание <br>дополнительным правкам клиента?";
+                document.getElementById("buttonAccThree").innerHTML = "Ваши действия в случае <br>непредвиденных ситуаций?";
+            } else {
+                document.getElementById("buttonAccOne").innerHTML = "Какими принципами вы руководствуетесь в работе?";
+                document.getElementById("buttonAccTwo").innerHTML = "Уделяете ли вы внимание дополнительным правкам клиента?";
+                document.getElementById("buttonAccThree").innerHTML = "Ваши действия в случае непредвиденных ситуаций?";
+            }
+        }
+        updateAccordion();
+        window.addEventListener("resize", updateAccordion);
+    }
 });

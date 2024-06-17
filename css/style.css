@@ -1908,7 +1908,7 @@ h3 {
   background-size: cover;
   background-position: center center;
   padding: 162px 0;
-  height: 530px;
+  height: 560px;
 }
 
 @media (max-width: 767px) {
@@ -3448,7 +3448,10 @@ h3 {
   background-image: url(../img/basic_img/smal_brutal.jpg);
 }
 .bradcam_bg_2 {
-  background-image: url(../img/basic_img/woman.jpg);
+  background-image: url(../img/basic_img/example_work.jpg);
+}
+.bradcam_bg_3 {
+  background-image: url(../img/basic_img/delivery.jpg);
 }
 
 .bradcam_area {
@@ -7302,42 +7305,53 @@ h6 {
   margin-right: 10px;
   font-size: 12px;
 }
-.rem_do_po{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 40px 0;
-  grid-gap: 0,5em;
 
-}
-#aqaqa{
+#example_work_label{
   text-align: center;
   margin: 30px 0;
 }
-.im{
-  max-width: 100%;
+
+.example_work_block {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5em;
+  margin: 40px 0;
 }
-.nadp{
-  text-align: center;
-  font-style: italic;
+
+.ew_text-block, .ew_text-block_ul {
+  padding: 20px;
 }
+
+.ew_content-block {
+  height: auto;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .example_work_block {
+    grid-template-columns: 1fr;
+  }
+  .ew_content-block {
+    height: auto; 
+    overflow: hidden;
+  }
+}
+
 .c{
   background-color: #6ece9b;
 }
-.imgr{
-  padding: 20px;
-}
-.abv{
-  padding: 20px;
-}
+
 .preserve-properties {
   display: initial !important;
 }
+
 .mapLabel{
   font-size: 30px;
   color: #000000;
   margin-bottom: 20px;
   text-align: center; 
 }
+
 .mapLabel.l2{
   margin-top: 60px;
 }

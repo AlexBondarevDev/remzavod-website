@@ -207,19 +207,53 @@ center: false,
   });
 
 /* magnificPopup img view */
-$('.popup-image').magnificPopup({
-	type: 'image',
-	gallery: {
-	  enabled: true
-	}
+$('.gallery-0 .gallery-item').magnificPopup({
+  delegate: 'a.img-pop-up',
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
 });
 
 /* magnificPopup img view */
-$('.img-pop-up').magnificPopup({
-	type: 'image',
-	gallery: {
-	  enabled: true
-	}
+$('.gallery-ex1 .gallery-item').magnificPopup({
+  delegate: 'a.img-pop-up',
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
+});
+
+$('.gallery-ex2 .gallery-item').magnificPopup({
+  delegate: 'a.img-pop-up',
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
+});
+
+$('.gallery-ex3 .gallery-item').magnificPopup({
+  delegate: 'a.img-pop-up',
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
+});
+
+$('.gallery-ex4 .gallery-item').magnificPopup({
+  delegate: 'a.img-pop-up',
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
+});
+
+$('.gallery-ex5 .gallery-item').magnificPopup({
+  delegate: 'a.img-pop-up',
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
 });
 
 /* magnificPopup video view */
@@ -352,8 +386,56 @@ dots:false,
 
 });
 
-// resitration_Form
 $(document).ready(function() {
+
+  $('.gallery-0 .gallery-item').magnificPopup({
+    delegate: 'a.img-pop-up',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
+  $('.gallery-ex1 .gallery-item').magnificPopup({
+    delegate: 'a.img-pop-up',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
+  $('.gallery-ex2 .gallery-item').magnificPopup({
+    delegate: 'a.img-pop-up',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
+  $('.gallery-ex3 .gallery-item').magnificPopup({
+    delegate: 'a.img-pop-up',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
+  $('.gallery-ex4 .gallery-item').magnificPopup({
+    delegate: 'a.img-pop-up',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
+  $('.gallery-ex5 .gallery-item').magnificPopup({
+    delegate: 'a.img-pop-up',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
 	$('.popup-with-form').magnificPopup({
 		type: 'inline',
 		preloader: false,
@@ -372,31 +454,5 @@ $(document).ready(function() {
 		}
 	});
 });
-
-
-
-//------- Mailchimp js --------//  
-function mailChimp() {
-  $('#mc_embed_signup').find('form').ajaxChimp();
-}
-mailChimp();
-
-
-
-        // Search Toggle
-        $("#search_input_box").hide();
-        $("#search").on("click", function () {
-            $("#search_input_box").slideToggle();
-            $("#search_input").focus();
-        });
-        $("#close_search").on("click", function () {
-            $('#search_input_box').slideUp(500);
-        });
-        // Search Toggle
-        $("#search_input_box").hide();
-        $("#search_1").on("click", function () {
-            $("#search_input_box").slideToggle();
-            $("#search_input").focus();
-        });
 
 })(jQuery);	

@@ -83,6 +83,7 @@
     max-width: 100%;
     height: auto;
     margin: 25px 0;
+    position: relative;
 }
 
 .image-container img {
@@ -90,4 +91,19 @@
     height: auto;
     display: inline-block;
     border-radius: 5px;
+}
+
+.contact-container{
+    display: block;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 400px) {
+    .contact-container{
+        padding-left: 0px;
+    }
+}
+
+.media-body h3 {
+    font-weight: bold;
 }
