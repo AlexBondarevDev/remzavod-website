@@ -7,7 +7,7 @@ $imageFolderPath = $_GET['folder'];
 
 
 function getImagesFromFolder($folderPath) {
-    $folderWorkedPath = '/var/www/remzavod/data/www/remzavodstan.ru' . $folderPath;
+    $folderWorkedPath = '/var/www/remzavo1/data/www/remzavodstankov.ru' . $folderPath;
 
     $images = array();
     if (is_dir($folderWorkedPath)) {

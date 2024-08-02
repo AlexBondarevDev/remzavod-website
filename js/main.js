@@ -13,9 +13,6 @@ $(window).on('scroll', function () {
 });
 
 
-
-
-
 $(document).ready(function(){
 
 // mobile_menu
@@ -27,10 +24,6 @@ if(menu.length){
 		openedSymbol:'-'
 	});
 };
-// blog-menu
-  // $('ul#blog-menu').slicknav({
-  //   prependTo: ".blog_menu"
-  // });
 
 // review-active
 $('.slider_active').owlCarousel({
@@ -147,7 +140,6 @@ navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
 dots:true,
 autoplayHoverPause: true,
 autoplaySpeed: 800,
-// dotsData: true,
 center: false,
   responsive:{
       0:{
@@ -320,12 +312,9 @@ $('.project-active').owlCarousel({
   loop:true,
   margin:30,
 items:1,
-// autoplay:true,
 navText:['<i class="Flaticon flaticon-left-arrow"></i>','<i class="Flaticon flaticon-right-arrow"></i>'],
 nav:true,
 dots:false,
-// autoplayHoverPause: true,
-// autoplaySpeed: 800,
   responsive:{
       0:{
           items:1,
@@ -358,12 +347,9 @@ $('.details_active').owlCarousel({
   loop:true,
   margin:0,
 items:1,
-// autoplay:true,
 navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
 nav:true,
 dots:false,
-// autoplayHoverPause: true,
-// autoplaySpeed: 800,
   responsive:{
       0:{
           items:1,

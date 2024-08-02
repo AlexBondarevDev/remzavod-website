@@ -27,9 +27,8 @@
                  font-weight: 700;
              }
              @media #{$mobile_device} {
-               font-size: 30px;
-            //    letter-spacing: 3px;
-            line-height: 45px;
+                font-size: 30px;
+                line-height: 45px;
             }
              @media #{$tablet_device} {
                font-size: 60px;

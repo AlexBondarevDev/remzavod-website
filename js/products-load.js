@@ -71,9 +71,10 @@ function loadImages(folderPath) {
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
             imagesArray = "";
+
             imagesArray = JSON.parse(xhr.responseText);
 
-            imagesArray.push("/img/products/call_me.jpg");
+            imagesArray.push("/img/products/pozvonit_kupit_stanok.jpg");
             
             displayImages();
         }
@@ -125,10 +126,7 @@ function displayImages() {
 
         link.addEventListener('click', function(event) {
             event.preventDefault();
-            console.log('был ' + currentProduct);
             currentProduct = getProductPosition(link.id);
-            console.log('стал ' + currentProduct);
-
 
             var modal = document.createElement('div');
             modal.className = 'modal';
@@ -184,7 +182,6 @@ function displayImages() {
 
 function gallerySwitcher() {
     var modalContentImage = document.querySelector('.modal-content img');
-    console.log(modalContentImage);
     modalContentImage.src = imagesArray[currentProduct];
 }
 

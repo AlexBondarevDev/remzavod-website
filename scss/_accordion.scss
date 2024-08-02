@@ -29,9 +29,6 @@
         .collapse {
             border-bottom: 1px solid #d7dbe3;
             &.show{
-                // background: #fff;
-                // -webkit-box-shadow: 0px 30px 50px 0 rgba(77, 193, 220, 0.1);
-                // box-shadow: 0px 30px 50px 0 rgba(77, 193, 220, 0.1);
                 border-bottom: 1px solid transparent;
             }
         }
@@ -39,28 +36,6 @@
     h5{
         position: relative;
         z-index: 1;
-        // button.btn.btn-link{
-        //     &:after{
-        //         position: absolute;
-        //         content: "\e648";
-        //         top: 9px;
-        //         right: 12px;
-        //         height: auto;
-        //         font-family: 'themify';
-        //         color: #0f2137;
-        //         font-size: 14px;
-        //         @media #{$mobile_device} {
-        //             right: 10px;
-        //         }
-        //     }
-        // }
-        // button.btn.btn-link.collapsed{
-        //     &:after{
-        //         content: "\e64b";
-        //         color: #0f2137;
-        //         font-size: 14px;
-        //     }
-        // }
         button.btn.btn-link{
             &:after{
                 position: absolute;

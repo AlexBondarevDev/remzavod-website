@@ -1321,21 +1321,21 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url('../img/basic_img/spindle.jpg');
+  background-image: url('../img/basic_img/rastachnoi_stanok.jpg');
   width: auto; height: auto;
 }
 
 /* line 4, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slider.scss */
 .slider_bg_2 {
-  background-image: url('../img/basic_img/plazma.jpg');
+  background-image: url('../img/basic_img/plazmenni_stanok_rezka.jpg');
 }
 
 .slider_bg_3 {
-  background-image: url('../img/basic_img/gear.jpg');
+  background-image: url('../img/basic_img/kachestvenni_stanok.jpg');
 }
 
 .slider_bg_4 {
-  background-image: url('../img/basic_img/limb.jpg');
+  background-image: url('../img/basic_img/frezernie_stanki.jpg');
 }
 
 /* line 8, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slider.scss */
@@ -1530,7 +1530,7 @@ h3 {
 
 /* line 27, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_counter.scss */
 .counter_bg_1 {
-  background-image: url(../img/basic_img/counter.jpg);
+  background-image: url(../img/basic_img/sverlilni_stanok.jpg);
 }
 
 /* line 31, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_counter.scss */
@@ -1556,14 +1556,8 @@ h3 {
     padding-bottom: 50px;
   }
 }
-#ooo1{
-  display: block;
-  width: 100%;
-  text-align: center;
-  font-style: italic;
-  font-size: 22px;
-}
-.ooo{
+
+.about_us_label{
   text-align: center;
 }
 #rek{
@@ -1573,7 +1567,6 @@ h3 {
 .cente{
   text-align: center;
 }
-
 
 /* line 41, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_counter.scss */
 .case_study_area.case_page .single_case {
@@ -1903,7 +1896,7 @@ h3 {
 
 /* line 61, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
 .Information_area {
-  background-image: url(../img/basic_img/info_img.jpg);
+  background-image: url(../img/basic_img/vosstanovlenie_stanka.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -2221,7 +2214,7 @@ h3 {
   font-size: 15px;
   line-height: 28px;
   color: #727272;
-  padding: 10px 30px 32px;
+  padding: 10px 43px 32px;
   font-weight: 400;
   line-height: 28px;
 }
@@ -3445,13 +3438,13 @@ h3 {
   margin-top: 30px;
 }
 .bradcam_bg_1 {
-  background-image: url(../img/basic_img/smal_brutal.jpg);
+  background-image: url(../img/basic_img/dogovor_na_pokupky_stanka.jpg);
 }
 .bradcam_bg_2 {
-  background-image: url(../img/basic_img/example_work.jpg);
+  background-image: url(../img/basic_img/remont_i_modernizatia_stankov.jpg);
 }
 .bradcam_bg_3 {
-  background-image: url(../img/basic_img/delivery.jpg);
+  background-image: url(../img/basic_img/plazmenni_stanok.jpg);
 }
 
 .bradcam_area {
