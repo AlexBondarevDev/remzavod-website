@@ -441,7 +441,7 @@ h3 {
   border-radius: 30px;
   text-align: center;
   color: #fff !important;
-  text-transform: capitalize;
+  text-transform: none;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -488,7 +488,7 @@ h3 {
   border-radius: 5px;
   text-align: center;
   color: #fff !important;
-  text-transform: capitalize;
+  text-transform: none;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
@@ -533,7 +533,7 @@ h3 {
   -moz-border-radius: 30px;
   border-radius: 30px;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: none;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
@@ -623,7 +623,7 @@ h3 {
   font-size: 14px;
   color: #009DFF;
   border: 1px solid #009DFF;
-  text-transform: capitalize;
+  text-transform: none;
   padding: 10px 25px;
 }
 
@@ -877,6 +877,10 @@ h3 {
   color: #FFFFFF;
   vertical-align: center;
   margin-bottom: 0px;
+}
+
+.logo h2 :hover {
+  color: rgb(198, 214, 200);
 }
 
 @media (max-width: 767px) {
@@ -1317,21 +1321,21 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url('../img/banner/banner.png');
+  background-image: url('../img/basic_img/rastachnoi_stanok.jpg');
   width: auto; height: auto;
 }
 
 /* line 4, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slider.scss */
 .slider_bg_2 {
-  background-image: url('../img/banner/banner_2.jpg');
+  background-image: url('../img/basic_img/plazmenni_stanok_rezka.jpg');
 }
 
 .slider_bg_3 {
-  background-image: url('../img/banner/banner_3.jpg');
+  background-image: url('../img/basic_img/kachestvenni_stanok.jpg');
 }
 
 .slider_bg_4 {
-  background-image: url('../img/banner/banner_4.jpg');
+  background-image: url('../img/basic_img/frezernie_stanki.jpg');
 }
 
 /* line 8, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slider.scss */
@@ -1353,12 +1357,16 @@ h3 {
 .slider_area .single_slider .slider_text h3 {
   font-family: "Poppins", sans-serif;
   font-size: 60px;
-  text-transform: capitalize;
+  text-transform: none;
   letter-spacing: 2px;
   font-weight: 300;
   line-height: 76px;
   margin-bottom: 15px;
   color: #fff;
+}
+
+#principles {
+  text-align: center;
 }
 
 /* line 26, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slider.scss */
@@ -1522,7 +1530,7 @@ h3 {
 
 /* line 27, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_counter.scss */
 .counter_bg_1 {
-  background-image: url(../img/about/counter2.jpg);
+  background-image: url(../img/basic_img/sverlilni_stanok.jpg);
 }
 
 /* line 31, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_counter.scss */
@@ -1548,21 +1556,9 @@ h3 {
     padding-bottom: 50px;
   }
 }
-#ooo1{
-  display: block;
-  width: 100%;
+
+.about_us_label{
   text-align: center;
-  font-style: italic;
-  font-size: 22px;
-}
-.ooo{
-  text-align: center;
-}
-#oooo{
-  font-size: 30px;
-  color: #000000;
-  margin-bottom: 20px;
-  text-align: center; 
 }
 #rek{
   font-style: italic;
@@ -1571,7 +1567,6 @@ h3 {
 .cente{
   text-align: center;
 }
-
 
 /* line 41, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_counter.scss */
 .case_study_area.case_page .single_case {
@@ -1871,41 +1866,8 @@ h3 {
   margin-bottom: 20px;
 }
 
-/* line 2, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
-.testimonial_area {
-  background-image: url(../img/banner/testmonial.png);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 142px 0 137px 0;
-}
-
-@media (max-width: 767px) {
-  /* line 2, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
-  .testimonial_area {
-    padding: 50px 0;
-  }
-}
-
-/* line 13, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
-.testimonial_area .single_testmonial p {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  margin: 34px 0;
-}
-
-@media (min-width: 320px) and (max-width: 1500px) {
-  /* line 19, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
-  .testimonial_area .single_testmonial p br {
-    display: none;
-  }
-}
-
 /* line 27, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
-.testimonial_area .single_testmonial .testmonial_author .thumb {
+.thumb {
   width: 42px;
   height: 42px;
   -webkit-border-radius: 50%;
@@ -1915,45 +1877,31 @@ h3 {
   margin: auto auto 15px auto;
 }
 
-/* line 34, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
-.testimonial_area .single_testmonial .testmonial_author h3 {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-/* line 40, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
-.testimonial_area .single_testmonial .testmonial_author span {
-  font-size: 13px;
-  font-weight: 400;
-  color: #fff;
-}
-
 /* line 47, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
-.testimonial_area .owl-carousel .owl-item img {
+.owl-carousel .owl-item img {
   display: inline-block;
   width: auto;
 }
 
 /* line 51, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
-.testimonial_area .owl-carousel .owl-nav div.owl-next {
+.owl-carousel .owl-nav div.owl-next {
   left: auto;
   right: 0;
 }
 
 /* line 55, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
-.testimonial_area .owl-carousel .owl-nav div {
+.owl-carousel .owl-nav div {
   left: 0;
 }
 
 /* line 61, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_testmonial.scss */
 .Information_area {
-  background-image: url(../img/banner/info_banner.png);
+  background-image: url(../img/basic_img/vosstanovlenie_stanka.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 162px 0;
+  height: 560px;
 }
 
 @media (max-width: 767px) {
@@ -2266,7 +2214,7 @@ h3 {
   font-size: 15px;
   line-height: 28px;
   color: #727272;
-  padding: 10px 30px 32px;
+  padding: 10px 43px 32px;
   font-weight: 400;
   line-height: 28px;
 }
@@ -2347,14 +2295,14 @@ h3 {
 /* line 41, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_case_details.scss */
 .case_details_area .details_main_wrap .single_details span {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 25px;
   color: #001D38;
 }
 
 /* line 46, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_case_details.scss */
 .case_details_area .details_main_wrap .single_details p {
   color: #727272;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -2934,7 +2882,7 @@ h3 {
 /* line 204, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_offers.scss */
 .features_room .rooms_here .single_rooms .room_thumb .room_heading a {
   color: #fff;
-  text-transform: capitalize;
+  text-transform: none;
   font-weight: 600;
   position: relative;
   z-index: 8;
@@ -3259,7 +3207,7 @@ h3 {
   font-size: 18px;
   font-weight: 500;
   color: #001D38;
-  text-transform: capitalize;
+  text-transform: none;
   margin-bottom: 40px;
 }
 
@@ -3275,7 +3223,7 @@ h3 {
   font-size: 22px;
   font-weight: 400;
   color: #fff;
-  text-transform: capitalize;
+  text-transform: none;
   margin-bottom: 40px;
 }
 
@@ -3490,10 +3438,13 @@ h3 {
   margin-top: 30px;
 }
 .bradcam_bg_1 {
-  background-image: url(../img/banner/bradcam.png);
+  background-image: url(../img/basic_img/dogovor_na_pokupky_stanka.jpg);
 }
 .bradcam_bg_2 {
-  background-image: url(../img/banner/banner_2_22.jpg);
+  background-image: url(../img/basic_img/remont_i_modernizatia_stankov.jpg);
+}
+.bradcam_bg_3 {
+  background-image: url(../img/basic_img/plazmenni_stanok.jpg);
 }
 
 .bradcam_area {
@@ -3528,7 +3479,7 @@ h3 {
   color: #fff;
   font-weight: 300;
   margin-bottom: 0;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 @media (max-width: 767px) {
@@ -3541,7 +3492,7 @@ h3 {
   font-size: 18px;
   color: #fff;
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .bradcam_area p a {
@@ -3561,7 +3512,7 @@ h3 {
 
 .popup_box .boxed-btn3 {
   width: 100%;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .popup_box .popup_header {
@@ -4247,10 +4198,17 @@ h3 {
 /*=================== contact banner end ====================*/
 /*=================== contact form start ====================*/
 /* line 45, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_contact.scss */
+
 .contact-title {
   font-size: 27px;
   font-weight: 600;
+  margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#FastMessageAnchor{
+  margin-bottom: 50px;
+  visibility: hidden;
 }
 
 /* line 53, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_contact.scss */
@@ -7256,7 +7214,7 @@ h6 {
   font-size: 20px;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  text-transform: capitalize;
+  text-transform: none;
   margin-bottom: 22px;
 }
 
@@ -7340,30 +7298,53 @@ h6 {
   margin-right: 10px;
   font-size: 12px;
 }
-.rem_do_po{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 40px 0;
-  grid-gap: 0,5em;
 
-}
-#aqaqa{
+#example_work_label{
   text-align: center;
   margin: 30px 0;
 }
-.im{
-  max-width: 100%;
+
+.example_work_block {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5em;
+  margin: 40px 0;
 }
-.nadp{
-  text-align: center;
-  font-style: italic;
+
+.ew_text-block, .ew_text-block_ul {
+  padding: 20px;
 }
+
+.ew_content-block {
+  height: auto;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .example_work_block {
+    grid-template-columns: 1fr;
+  }
+  .ew_content-block {
+    height: auto; 
+    overflow: hidden;
+  }
+}
+
 .c{
   background-color: #6ece9b;
 }
-.imgr{
-  padding: 20px;
+
+.preserve-properties {
+  display: initial !important;
 }
-.abv{
-  padding: 20px;
+
+.mapLabel{
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+.mapLabel.l2{
+  margin-top: 60px;
 }

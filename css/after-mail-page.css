@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html{
+    padding: 25px;
+  }
+  
+  h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+  }
+  
+  h2 {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  
+  .video_service_btn {
+    text-align: center;
+  }
+  
+  .boxed-btn3 {
+    font-size: 20px;
+  }
+  
+  #success-page-h1 {
+    color: #309bb3;
+  }
+  #success-page-h2 {
+    color: #2f7d43;
+  }
+  
+  #error-page-h1 {
+    color: #da0e0e;
+  }
+  #error-page-h2 {
+    color: #c04934;
+  }
+
+  @media screen and (max-width: 400px) {
+    h1 {
+      margin-top: 0px;
+    }
+  }

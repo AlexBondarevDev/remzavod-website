@@ -13,9 +13,6 @@ $(window).on('scroll', function () {
 });
 
 
-
-
-
 $(document).ready(function(){
 
 // mobile_menu
@@ -27,10 +24,6 @@ if(menu.length){
 		openedSymbol:'-'
 	});
 };
-// blog-menu
-  // $('ul#blog-menu').slicknav({
-  //   prependTo: ".blog_menu"
-  // });
 
 // review-active
 $('.slider_active').owlCarousel({
@@ -147,7 +140,6 @@ navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
 dots:true,
 autoplayHoverPause: true,
 autoplaySpeed: 800,
-// dotsData: true,
 center: false,
   responsive:{
       0:{
@@ -207,19 +199,53 @@ center: false,
   });
 
 /* magnificPopup img view */
-$('.popup-image').magnificPopup({
-	type: 'image',
-	gallery: {
-	  enabled: true
-	}
+$('.gallery-0 .gallery-item').magnificPopup({
+  delegate: 'a.img-pop-up',
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
 });
 
 /* magnificPopup img view */
-$('.img-pop-up').magnificPopup({
-	type: 'image',
-	gallery: {
-	  enabled: true
-	}
+$('.gallery-ex1 .gallery-item').magnificPopup({
+  delegate: 'a.img-pop-up',
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
+});
+
+$('.gallery-ex2 .gallery-item').magnificPopup({
+  delegate: 'a.img-pop-up',
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
+});
+
+$('.gallery-ex3 .gallery-item').magnificPopup({
+  delegate: 'a.img-pop-up',
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
+});
+
+$('.gallery-ex4 .gallery-item').magnificPopup({
+  delegate: 'a.img-pop-up',
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
+});
+
+$('.gallery-ex5 .gallery-item').magnificPopup({
+  delegate: 'a.img-pop-up',
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
 });
 
 /* magnificPopup video view */
@@ -286,12 +312,9 @@ $('.project-active').owlCarousel({
   loop:true,
   margin:30,
 items:1,
-// autoplay:true,
 navText:['<i class="Flaticon flaticon-left-arrow"></i>','<i class="Flaticon flaticon-right-arrow"></i>'],
 nav:true,
 dots:false,
-// autoplayHoverPause: true,
-// autoplaySpeed: 800,
   responsive:{
       0:{
           items:1,
@@ -324,12 +347,9 @@ $('.details_active').owlCarousel({
   loop:true,
   margin:0,
 items:1,
-// autoplay:true,
 navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
 nav:true,
 dots:false,
-// autoplayHoverPause: true,
-// autoplaySpeed: 800,
   responsive:{
       0:{
           items:1,
@@ -352,8 +372,56 @@ dots:false,
 
 });
 
-// resitration_Form
 $(document).ready(function() {
+
+  $('.gallery-0 .gallery-item').magnificPopup({
+    delegate: 'a.img-pop-up',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
+  $('.gallery-ex1 .gallery-item').magnificPopup({
+    delegate: 'a.img-pop-up',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
+  $('.gallery-ex2 .gallery-item').magnificPopup({
+    delegate: 'a.img-pop-up',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
+  $('.gallery-ex3 .gallery-item').magnificPopup({
+    delegate: 'a.img-pop-up',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
+  $('.gallery-ex4 .gallery-item').magnificPopup({
+    delegate: 'a.img-pop-up',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
+  $('.gallery-ex5 .gallery-item').magnificPopup({
+    delegate: 'a.img-pop-up',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
 	$('.popup-with-form').magnificPopup({
 		type: 'inline',
 		preloader: false,
@@ -372,31 +440,5 @@ $(document).ready(function() {
 		}
 	});
 });
-
-
-
-//------- Mailchimp js --------//  
-function mailChimp() {
-  $('#mc_embed_signup').find('form').ajaxChimp();
-}
-mailChimp();
-
-
-
-        // Search Toggle
-        $("#search_input_box").hide();
-        $("#search").on("click", function () {
-            $("#search_input_box").slideToggle();
-            $("#search_input").focus();
-        });
-        $("#close_search").on("click", function () {
-            $('#search_input_box').slideUp(500);
-        });
-        // Search Toggle
-        $("#search_input_box").hide();
-        $("#search_1").on("click", function () {
-            $("#search_input_box").slideToggle();
-            $("#search_input").focus();
-        });
 
 })(jQuery);	

@@ -1,0 +1,13 @@
+Host: remzavodstankov.ru
+User-agent: *
+Allow: /*.html$
+Allow: /*.css$
+Allow: /*.js$
+Allow: /
+Disallow: /error.html
+Disallow: /thank-you.html
+Disallow: /google4fb652030be95990.html
+Disallow: /yandex_7574764fb0cbf5cc.html
+Disallow: /php/phpmailer/
+Disallow: /php/mail.php
+Sitemap: https://remzavodstankov.ru/sitemap.xml

@@ -1,5 +1,5 @@
 .slider_bg_1{
-    background-image: url(../img/banner/banner.png);
+    background-image: url(../img/basic_img/spindle.jpg);
 }
 .slider_bg_2{
     background-image: url(../img/banner/banner_2.png);
@@ -27,9 +27,8 @@
                  font-weight: 700;
              }
              @media #{$mobile_device} {
-               font-size: 30px;
-            //    letter-spacing: 3px;
-            line-height: 45px;
+                font-size: 30px;
+                line-height: 45px;
             }
              @media #{$tablet_device} {
                font-size: 60px;

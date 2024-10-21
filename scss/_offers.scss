@@ -166,7 +166,6 @@
       .room_thumb{
         position: relative;
         overflow: hidden;
-        // z-index: 8;
         img{
           width: 100%;
           @include transform(scale(1));
@@ -297,16 +296,9 @@
   }
 }
 
-// instragram_area
 .instragram_area{
   display: block;
   overflow: hidden;
-  @media #{$mobile_device} {
-    // margin-bottom: 30px;
-}
-  @media #{$tablet_device} {
-    // margin-bottom: 30px;
-}
   .single_instagram{
     width: 20%;
     float: left;
@@ -314,7 +306,6 @@
     overflow: hidden;
     @media #{$mobile_device} {
       width: 100%;
-      // margin-bottom: 30px;
   }
     @media #{$tablet_device} {
       width: 50%;

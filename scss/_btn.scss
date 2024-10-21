@@ -9,7 +9,6 @@
     border: 0;
     border: 1px solid #5DB2FF;
     letter-spacing: 3px;
-    // width: 180px;
     text-align: center;
     color: #5DB2FF !important;
     text-transform: uppercase;
@@ -40,15 +39,12 @@
 	font-size: 15px;
     font-weight: 500;
     border: 0;
-    // border: 1px solid transparent;
     @include border-radius(30px);
-    // width: 180px;
     text-align: center;
     color: #fff !important;
     text-transform: capitalize;
     @include transition(.3s);
     cursor: pointer;
-    // letter-spacing: 2px;
     &:hover{
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100&0.96+0,0.96+100 */
         background: -moz-linear-gradient(right,  rgba(1,129,245,0.96) 0%, rgba(93,178,255,0.96) 100%); /* FF3.6-15 */
@@ -57,7 +53,6 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f50181f5', endColorstr='#f55db2ff',GradientType=0 ); /* IE6-9 */
 
         color: #fff !important;
-        // border: 1px solid #28AE61;
     }
     &:focus{
         outline: none;
@@ -77,7 +72,6 @@
     border: 0;
     border: 1px solid #fff;
     @include border-radius(5px);
-    // width: 180px;
     text-align: center;
     color: #fff !important;
     text-transform: capitalize;
@@ -110,7 +104,6 @@
     border: 0;
     border: 1px solid #5DB2FF;
     @include border-radius(30px);
-    // width: 180px;
     text-align: center;
     text-transform: capitalize;
     @include transition(.5s);

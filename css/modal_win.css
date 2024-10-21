@@ -1,0 +1,109 @@
+.card_modalwin {
+    cursor: pointer;
+}
+
+.container_modalwin {
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.container_modalwin *,
+.container_modalwin *::before,
+.container_modalwin *::after {
+    box-sizing: inherit;
+}
+
+.modal__box {
+    position: relative;
+    border-radius: 5px;
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    margin: 30px 15px;
+    background-color: white;
+    box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.container_modalwin.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.container_modalwin.open .modal__box {
+    transform: scale(1);
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.modal__close-btn svg path {
+    transition: fill .4s;
+}
+
+.modal__close-btn:hover svg path {
+    fill: blue;
+}
+
+.modal__close-btn:active svg path {
+    fill: rgb(186, 53, 0);
+}
+
+#modal_text {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.modal__box strong {
+    font-weight: bold;
+}
+
+.image-container {
+    max-width: 100%;
+    height: auto;
+    margin: 25px 0;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.contact-container{
+    display: block;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 400px) {
+    .contact-container{
+        padding-left: 0px;
+    }
+}
+
+.media-body h3 {
+    font-weight: bold;
+}

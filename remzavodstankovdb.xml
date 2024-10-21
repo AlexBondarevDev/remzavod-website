@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.4.15.10
+- https://www.phpmyadmin.net
+-
+- Хост: localhost
+- Время создания: Авг 03 2024 г., 21:49
+- Версия сервера: 10.3.31-MariaDB-cll-lve
+- Версия PHP: 5.4.16
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="remzavodstankovdb" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="Production">
+                CREATE TABLE `Production` (
+                  `id_production` int(11) NOT NULL AUTO_INCREMENT,
+                  `class` varchar(100) NOT NULL,
+                  `modal` varchar(50) NOT NULL,
+                  PRIMARY KEY (`id_production`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'remzavodstankovdb'
+    -->
+    <database name="remzavodstankovdb">
+        <!-- Таблица Production -->
+        <table name="Production">
+            <column name="id_production">1</column>
+            <column name="class">Обрабатывающий центр</column>
+            <column name="modal">КМЦ-600</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">2</column>
+            <column name="class">Пресс гидравлический</column>
+            <column name="modal">П6332</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">3</column>
+            <column name="class">Станок вертикально-фрезерный</column>
+            <column name="modal">6Р13</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">4</column>
+            <column name="class">Станок вертикально-фрезерный</column>
+            <column name="modal">ВМ127</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">5</column>
+            <column name="class">Станок внутришлифовальный</column>
+            <column name="modal">3А227П</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">6</column>
+            <column name="class">Станок глубокой расточки (2008 г.в.)</column>
+            <column name="modal">РТ2631</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">7</column>
+            <column name="class">Станок горизонтально-протяжной</column>
+            <column name="modal">7Б55</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">8</column>
+            <column name="class">Станок горизонтально-фрезерный</column>
+            <column name="modal">6Т62Г</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">9</column>
+            <column name="class">Станок долбежный</column>
+            <column name="modal">МС7417</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">10</column>
+            <column name="class">Станок зубофрезерный</column>
+            <column name="modal">53Д80Н</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">11</column>
+            <column name="class">Станок зубофрезерный</column>
+            <column name="modal">53А05В</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">12</column>
+            <column name="class">Станок кругло-шлифовальный</column>
+            <column name="modal">3М133В</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">13</column>
+            <column name="class">Станок правильно-отрезной</column>
+            <column name="modal">ГД162</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">14</column>
+            <column name="class">Станок продольно-фрезерный</column>
+            <column name="modal">6М616Ф11-23</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">15</column>
+            <column name="class">Станок резьбо-фрезерный</column>
+            <column name="modal">5Д63</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">16</column>
+            <column name="class">Станок токарно-винторезный</column>
+            <column name="modal">УТ16ПМ</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">17</column>
+            <column name="class">Станок токарно-карусельный</column>
+            <column name="modal">1516Ф1</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">18</column>
+            <column name="class">Станок токарный с ЧПУ</column>
+            <column name="modal">16М30Ф3</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">19</column>
+            <column name="class">Станок токарный с ЧПУ (5 шт.)</column>
+            <column name="modal">16К20Ф3</column>
+        </table>
+        <table name="Production">
+            <column name="id_production">20</column>
+            <column name="class">Станок широкоуниверсальный</column>
+            <column name="modal">67К25ПФ2</column>
+        </table>
+    </database>
+</pma_xml_export>
