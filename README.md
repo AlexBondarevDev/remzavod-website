@@ -1,57 +1,55 @@
-# Веб-сайт для ООО «Ремзавод»
+# Website for LLC "Remzavod"
 
 ![remzavod](https://github.com/user-attachments/assets/c9a841b6-13f7-4ec6-acc0-b9ed498a68d7)
 
-## Описание
-Веб-сайт для ООО «Ремзавод» предназначен для представления услуг и продукции компании, улучшения взаимодействия с клиентами и повышения видимости в интернете.
+## Description
+The website for LLC "Remzavod" is designed to present the company's services and products, improve customer interaction, and increase visibility online.
 
-## Основные функции
-- **Главная страница:** Приветственное сообщение, краткая информация о компании и оказываемых услугах, навигация по сайту.
-- **Продукция:** Каталог продукции с актуальной информацией.
-- **Работы:** Примеры работ, выполненных компанией, с детальной информацией.
-- **О компании:** Подробная информация о истории, профиле деятельности и ценностях компании.
-- **Контакты:** Контактная информация, форма обратной связи и карта местоположения филиалов компании.
+## Key Features
+- **Home Page:** A welcome message, brief information about the company and its services, and site navigation.
+- **Products:** A catalog of products with up-to-date information.
+- **Projects:** Examples of the company's completed projects with detailed descriptions.
+- **About Us:** Detailed information about the company's history, activities, and values.
+- **Contacts:** Contact information, a feedback form, and a map showing the company's branch locations.
 
-
-## Технологии
+## Technologies
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** PHP
-- **База данных:** MySQL
-- **Управление версиями:** Git
+- **Database:** MySQL
+- **Version Control:** Git
 
-## Установка и запуск
-### 1. Клонируйте репозиторий: ###
+## Installation and Setup
+### 1. Clone the repository: ###
     git clone https://github.com/AlexBond266/remzavod-website.git
 
-### 2. Импортируйте базу данных на хостинг ###
+### 2. Import the database to the hosting ###
 
-В панели управления Вашего хостинга откройте ISP Manager, перейдите в раздел "Базы данных", создайте новую базу данных, перейдите в PHPMyAdmin, выполните импорт файла "remzavodstankovdb.xml".
-Настройте базу данных и заполните необходимой информацией.
+In your hosting control panel, open ISP Manager, navigate to the "Databases" section, create a new database, open PHPMyAdmin, and import the file "remzavodstankovdb.xml".  
+Set up the database and fill it with the necessary information.
 
-_Т.к. целевая организация обладала небольшим количеством едениц продукции - хранение фото продукции происходит следующим образом:_
-_В БД хранится текстовая информация о продукции. Фотографии, соответствующие конкретному экземпляру, расположены в папках по принципу "id == 7  -->  .../img/products/7/"_
+_Since the target company had a small number of products, the product images are stored as follows:_  
+_Text information about the products is stored in the database, and the corresponding product images are located in folders based on the principle "id == 7 --> .../img/products/7/"._
 
+### 3. Configure the website's connection to the database ###
 
-### 3. Пропишите данные для подключения веб-сайта к БД ###
-
-В файле .../php/database.php заполните данные для подключения к БД.
-Пример:
+In the file .../php/database.php, fill in the details to connect to the database.  
+Example:
 
     $servername = "localhost";
     $username = "remzavodstankovdb";
     $password = "12345";
     $dbname = "remzavodstankovdb";
 
-### 4. Настройте отправку данных из формы обратной связи на целевой mail ###
+### 4. Set up the feedback form to send data to the target email ###
 
-Для отправки данных используется _[PHPMailer](https://github.com/PHPMailer/PHPMailer)_.
-Настройте файл .../php/mail.php под собственные нужды, основываясь на инструкции в репозитории библиотеки.
+The feedback form uses _[PHPMailer](https://github.com/PHPMailer/PHPMailer)_.  
+Configure the .../php/mail.php file according to your needs, following the instructions in the library repository.
 
-Узнайте у специалистов службы поддержки корректный абсолютный путь до Ваших файлов в файловом пространстве сервера.
-Подкорректируйте данные об абсолютном пути на основе полученной информации в файлах mail.php и getProductsImg.php.
-Пример:
+Ask your hosting provider's support team for the correct absolute path to your files on the server.  
+Update the absolute path in the mail.php and getProductsImg.php files based on this information.  
+Example:
 
     require_once('/var/www/data/www/remzavodstankov.ru/php/phpmailer/PHPMailerAutoload.php');
 
-## Лицензия
-Этот проект лицензирован на условиях MIT License - см. файл [LICENSE](LICENSE) для подробностей.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
